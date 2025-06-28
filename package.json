@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "webpack",
+    "test": "jest",
     "dev": "webpack serve",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
