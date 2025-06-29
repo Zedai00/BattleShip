@@ -19,5 +19,20 @@
   },
   "dependencies": {
     "jest": "^30.0.3"
-  }
+  },
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zedai00/BattleShip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zedai00/BattleShip/issues"
+  },
+  "homepage": "https://github.com/Zedai00/BattleShip#readme"
 }

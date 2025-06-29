@@ -1,15 +1,22 @@
 const Ship = (length) => {
   let hits = 0
+  let hitCoords = []
 
-  function hit() {
-    hits++;
+  function hit(x, y) {
+    hits++
+    hitCoords.push({ x, y })
   }
 
   function isSunk() {
-    return hits === length
+    return hits >= length
   }
 
-  return { length, hit, isSunk }
+  function isCoordHit(x, y) {
+    return hitCoords.some(c => c.x === x && c.y === y)
+  }
+
+  return { length, hit, isSunk, isCoordHit }
 }
 
-module.exports = Ship
+export default Ship
+
